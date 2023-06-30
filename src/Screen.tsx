@@ -1,7 +1,6 @@
-import { shaderMaterial } from '@react-three/drei'
-import { useFrame, useThree } from '@react-three/fiber'
+import { useFrame } from '@react-three/fiber'
 import { useControls } from 'leva'
-import { BackSide, DoubleSide, ShaderMaterial, Vector2 } from 'three'
+import { BackSide, ShaderMaterial } from 'three'
 
 export default function Screen() {
 	const { uvOffseta, uvOffsetb, iterations, fractMul, fractRes, ia, ib, a, b, c, da, f } = useControls({
@@ -170,7 +169,7 @@ export default function Screen() {
 	})
 
 	shaderMaterial.side = BackSide
-	useFrame((state, delta) => {
+	useFrame((state) => {
 		let elapsedTime = state.clock.elapsedTime
 
 		shaderMaterial.uniforms.iTime.value = elapsedTime
