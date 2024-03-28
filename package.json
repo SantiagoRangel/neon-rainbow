@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
@@ -12,6 +12,7 @@
   "dependencies": {
     "@react-three/drei": "^9.77.3",
     "@react-three/fiber": "^8.13.3",
+    "@react-three/xr": "^5.7.1",
     "@types/three": "^0.152.1",
     "leva": "^0.9.35",
     "react": "^18.2.0",
