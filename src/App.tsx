@@ -1,6 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 import Scene from "./Scene";
-import { VRButton, ARButton, XR, Controllers, Hands } from "@react-three/xr";
+import { VRButton, XR, Controllers, Hands } from "@react-three/xr";
 
 function App() {
   return (
