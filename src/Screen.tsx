@@ -31,13 +31,13 @@ export default function Screen() {
       step: 0.1,
     },
     iterations: {
-      value: 3,
+      value: 4,
       min: 1,
       max: 10,
       step: 1,
     },
     fractMul: {
-      value: 1.5,
+      value: 2.9,
       min: -10,
       max: 10,
       step: 0.1,
@@ -135,9 +135,12 @@ export default function Screen() {
 
   return (
     <>
+      {/* <mesh> */}
       <mesh material={shaderMaterial}>
-        <planeGeometry args={[4, 4, 1, 1]} />
-        <boxGeometry args={[2, 2, 2]} />
+        {/* <meshNormalMaterial /> */}
+        {/* <planeGeometry args={[4, 4, 1, 1]} /> */}
+        {/* <boxGeometry args={[2, 2, 2]} /> */}
+        <sphereGeometry args={[2, 64, 64]} />
         {/* <boxGeometry></boxGeometry> */}
         {/* <sphereGeometry></sphereGeometry> */}
       </mesh>
